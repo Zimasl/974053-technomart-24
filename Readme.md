@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Игорь](https://up.htmlacademy.ru/htmlcss/24/user/974053).
-* Наставник: `Александр Уразаев`.
+* Наставник: [Александр Уразаев] (https://htmlacademy.ru/profile/urazaev).
 
 ---
 
