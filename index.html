@@ -160,10 +160,35 @@
           заехав в наш офис:
         </p>
         <div class="map">
-        <a><img src="img/map.jpg" width="300" height="158" alt="карта"></a>
+          <button type="button" name="big-map">
+            <a class="big-map" href="img/big-map.jpg">
+              <img src="img/map.jpg" width="300" height="158" alt="карта">
+            </a>
+          </button>
       </div>
-         <!--Здесь будет карта-->
-        <a class="button" href="forma-write.html">Заблудились? Напишите нам!</a>
+      <div class="form-write">
+          <button class="button-form-write" type="button">
+           <a class="forma-write" href="forma-write.html">Заблудились? Напишите нам!</a>
+         </button>
+      </div>
+        <div class="form-answer">
+           <form class="write-us" action="#" method="post">
+               <p>
+                 <label for="user-name">Ваше имя:</label>
+                 <input class="user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="user-email">Ваш e-mail:</label>
+                <input class="user-email" id="user-email" type="text" name="email" placeholder="email@example.com">
+             </p>
+             <p>
+               <label for="text-later">Текс письма:</label>
+               <input class="text-later" id="text-later" type="text" name="message" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          </div>
+      </div>
       </section>
       </main>
       <footer class="main-footer">
