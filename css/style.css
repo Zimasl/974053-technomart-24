@@ -103,7 +103,6 @@ header {
   font-size: 17px;
   text-align: center;
   color: #ffffff;
-  list-style: none;
 }
 
 .info-company {
@@ -114,21 +113,18 @@ header {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-  text-align: left;
 }
 
 .info-company p{
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  text-align: left;
 }
 
 .list-transport {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  text-align: left;
 }
 
 .button-company {
@@ -139,21 +135,18 @@ header {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  text-align: center;
 }
 
 .contacts h2{
   font-size: 30px;
   line-height: 30px;
   color: #000000;
-  text-align: left;
 }
 
 .contacts p {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
-  text-align: left;
 }
 
 .form-write {
@@ -174,14 +167,12 @@ header {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  text-align: left;
 }
 
 .list-offers a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
-  text-align: left;
 }
 
 .list-navigation-footer a:hover,
@@ -195,8 +186,6 @@ header {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-  line-height: 1.33;
-  text-align: left;
 }
 
 .footer-down p{
@@ -229,7 +218,6 @@ header {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  text-align: left;
 }
 
 .mail-developed a,
@@ -237,7 +225,6 @@ header {
   font-size: 16px;
   line-height: 18px;
   color: #ffd180;
-  text-align: left;
 }
 
 .pop-up,
