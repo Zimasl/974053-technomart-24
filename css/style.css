@@ -163,6 +163,7 @@ a {
   line-height: 20px;
   color: #000000;
   text-align: left;
+  list-style: none;
 }
 
 .button-company {
@@ -230,6 +231,13 @@ a {
   text-align: left;
 }
 
+.list-navigation-footer a:hover,
+.list-navigation-footer a:focus,
+.list-offers a:hover,
+.list-offers a:focus {
+  text-decoration: underline;
+}
+
 .adress-footer {
   font-size: 18px;
   line-height: 24px;
@@ -278,9 +286,4 @@ a {
   line-height: 1.13;
   letter-spacing: normal;
   text-align: left;
-}
-
-.pop-up,
-.big-map {
-  display: none;
 }
