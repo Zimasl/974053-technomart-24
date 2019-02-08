@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #f4f7f9;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation a,
+.user-navigation a,
+.list-navigation-footer a,
+.list-offers a {
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+.logo-header {
+  background-color: #ee3643;
+}
+
+.header-up-cap {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #32425c;
+}
+
+.user-navigation {
+  font-family: Cuprum;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.order {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+.header-headline {
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.number {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.adress-header {
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
+}
+
+.button-inter {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.button-reg {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.main-navigation {
+  width: 940px;
+  height: 60px;
+  box-shadow: inset 0px -5px 0 0 var(--dark);
+  background-color: #32425c;
+}
+
+.list-navigation {
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  list-style: none;
+}
+
+.info-company {
+  background-color: #ffffff
+}
+
+.info-company h2{
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  text-align: left;
+}
+
+.info-company p{
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+}
+
+.list-transport {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  text-align: left;
+}
+
+.button-company {
+  background-color: #ee3643;
+}
+
+.button-company a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contacts h2{
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-align: left;
+}
+
+.contacts p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+}
+
+.form-write {
+  background-color: #ee3643;
+}
+
+.form-write a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-up {
+  background-color: #32425c;
+}
+
+.list-navigation-footer a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.list-offers a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+  list-style: none;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.adress-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  font-family: Cuprum;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.footer-down p{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.main-footer {
+  background-color: #293449;
+}
+
+.mail-developed,
+.footer-developed {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.mail-developed a,
+.footer-developed a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+  font-family: Cuprum;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.pop-up,
+.big-map {
+  display: none;
+}

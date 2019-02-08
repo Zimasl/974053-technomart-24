@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,11 +15,10 @@
       <div class="header-up-cap">
         <div class="search">
           <form action="https://echo.htmlacademy.ru" method="get" >
-              <label class="search-label" for="search"></label>
               <input id="search" type="search" name="search"  placeholder="Поиск:">
           </form>
         </div>
-        <div>
+        <div class="user-navigation">
           <a class="bookmarks" href="bookmarks.html">Закладки</a>
           <a class="basket" href="basekt.html">Корзина:</a>
           <a class="order" href="order.html">Оформить заказ</a>
@@ -28,14 +30,18 @@
         строительных материалов
         и инструментов для ремонта
       </p>
-        <div class="number">
-          <p> +7(812)555-05-55</p>
-          <p> г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
+        <div class="contacts">
+          <p class="number"> +7(812)555-05-55</p>
+          <p class="adress-header"> г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
         </div>
-        <a class="button" href="enter.html">Войти</a>
-        <a class="button" href="registration.html">Регистрация</a>
+        <div class="user-login">
+        <a class="button-inter" href="enter.html">Войти</a>
+        </div>
+        <div class="user-reg">
+        <a class="button-reg" href="registration.html">Регистрация</a>
+        </div>
         <nav class="main-navigation">
-        <ul>
+        <ul class="list-navigation">
           <li><a href="main.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -47,14 +53,16 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="block-menu">
         <ul class="block-menu-categories">
           <!--Здесь будет слайдер-->
             <li><a class="button" href="catalog.html">Открыть каталог</a></li>
-            <li class="materials">
+          <li class="materials">
+            <div class="block1">
             <h2>Материалы</h2>
-            <a class="button" href="materials.html">На любой вкус</a>
+            <a class="button button1" href="materials.html">На любой вкус</a>
+            </div>
           </li>
           <li class="tool">
             <h2>Инструменты</h2>
@@ -154,7 +162,9 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="company.html">Подробнее о компании</a>
+        <div class="button-company">
+        <a class="button-company" href="company.html">Подробнее о компании</a>
+        </div>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
@@ -183,14 +193,14 @@
               <p> +7(812)555-05-55</p>
             </div>
           </div>
-          <ul>
+          <ul class="list-navigation-footer">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="delivery.html">Доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-            <ul>
+            <ul class="list-offers">
               <li><a href="materials.html">Материалы</a></li>
               <li><a href="equipment.html">Техника</a></li>
               <li><a href="tool.html">Инструмент</a></li>
