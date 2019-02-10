@@ -16,6 +16,21 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  display: none;
+}
+
+.list-navigation,
+.list-navigation-footer,
+.list-offers,
+.footer-social li,
+.paggination-list li,
+.list-firm li,
+.list-power li,
+.breadcrumbs li {
+  list-style: none;
+}
+
 header {
   background-color: #f4f7f9;
 }
@@ -27,17 +42,14 @@ header {
   color: #ffffff;
 }
 
-.main-navigation a:hover,
+/*.main-navigation a:hover,
 .main-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
-}
-
+}*/
 
 .logo-header {
-  width: 220px;
-  height: 47px;
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
@@ -49,13 +61,10 @@ header {
 }
 
 .user-navigation {
-    font-size: 17px;
-
+  font-size: 17px;
 }
 
 .order {
-  width: 150px;
-  height: 42px;
   background-color: #63a63e;
 }
 
@@ -63,17 +72,6 @@ header {
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
-}
-
-.contacts .number {
-  font-size: 21px;
-  color: #ee3643;
-}
-
-.adress-header {
-  font-size: 14px;
-  text-align: center;
-  color: #32425c;
 }
 
 .button-inter {
@@ -86,17 +84,24 @@ header {
   color: #000000;
 }
 
-.button-order {
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-}
-
 .main-navigation {
-  width: 940px;
-  height: 60px;
   box-shadow: inset 0px -5px 0 0 var(--dark);
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.number {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  text-align: center;
+  border: 3px solid #ffffff;
+}
+
+.adress-header {
+  font-size: 14px;
+  text-align: center;
+  color: #32425c;
 }
 
 .list-navigation {
@@ -194,10 +199,6 @@ header {
   color: #ffffff;
 }
 
-.breadcrumbs {
-  list-style: none;
-}
-
 .breadcrumbs a {
   font-family: PTSans;
   font-size: 13px;
@@ -234,4 +235,129 @@ header {
 .popular-firms,
 .service {
   display: none;
+}
+
+.page-title-block h1 {
+  font-size: 30px;
+  line-height:30px;
+  color: #32425c;
+
+}
+
+.user-login p {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.button-user a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  list-style: none;
+}
+
+/* ==========================Оформление каталога==========================*/
+.breadcrumbs{
+  text-decoration: none;
+}
+
+.breadcrumbs li {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.list-firm  {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.list-firm li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.list-power {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.list-power li {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-item h3{
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-align: center;
+}
+
+.paggination-list li {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.paggination-item-current {
+  color: #ffffff
+}
+
+/*========================Стлили наведения и клика главноя страница============*/
+.logo-header:hover {
+  background-color: #ca2c37;
+}
+
+.user-navigation a:hover {
+  background-color: #212a3a;
+}
+
+.user-navigation .order:hover {
+  background-color: #5fbb2d;
+}
+
+.user-login a:hover,
+.user-reg a:hover {
+  color: #ee3643;
+}
+
+.list-navigation a:hover {
+  background-color: #293449;
+}
+
+.footer-social li:hover {
+  background-color: #ee3643;
+}
+
+.list-navigation-footer a:hover,
+.list-offers a:hover,
+.developed a:hover {
+  text-decoration: underline;
+}
+
+/*========================Стлили наведения и клика каталога============*/
+
+.button-user a:hover {
+  color: #ee3643;
+}
+
+.paggination-list li:hover {
+  border: 1px solid #bdc6ca;
 }
