@@ -5,9 +5,9 @@ body {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  /*font-weight: 700;*/
   color: #ffffff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   background-color: #ffffff;
   text-align: left;
 }
@@ -27,12 +27,9 @@ a {
 .paggination-list li,
 .list-firm li,
 .list-power li,
-.breadcrumbs li {
+.breadcrumbs li,
+.list-transport {
   list-style: none;
-}
-
-header {
-  background-color: #f4f7f9;
 }
 
 .main-navigation a,
@@ -48,7 +45,9 @@ header {
 .user-navigation a:focus {
   background-color: #242424;
 }*/
-
+.main-header {
+  background-color: #f4f7f9;
+}
 .logo-header {
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -60,15 +59,11 @@ header {
   background-color: #32425c;
 }
 
-.user-navigation {
-  font-size: 17px;
-}
-
 .order {
-  background-color: #63a63e;
+    background-color: #63a63e;
 }
 
-.header-down p {
+.header-headline {
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
@@ -85,7 +80,7 @@ header {
 }
 
 .main-navigation {
-  box-shadow: inset 0px -5px 0 0 var(--dark);
+  box-shadow: inset 0px -5px 0 0;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
@@ -94,13 +89,12 @@ header {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
-  text-align: center;
   border: 3px solid #ffffff;
 }
 
 .adress-header {
   font-size: 14px;
-  text-align: center;
+  line-height: 24px;
   color: #32425c;
 }
 
@@ -109,27 +103,26 @@ header {
   text-align: center;
   color: #ffffff;
 }
-
+/*Подробнее о компании*/
 .info-company {
+  color: #000000;
   background-color: #ffffff
 }
 
 .info-company h2{
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  text-transform: uppercase;
 }
 
 .info-company p{
   font-size: 13px;
   line-height: 24px;
-  color: #000000;
 }
 
 .list-transport {
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
 }
 
 .button-company {
@@ -141,14 +134,15 @@ header {
   line-height: 18px;
   color: #ffffff;
 }
-
-.contacts h2{
+/*Контакты*/
+.contacts-down h2{
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.contacts p {
+.contacts-down p{
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -227,7 +221,7 @@ header {
   line-height: 18px;
   color: #ffd180;
 }
-
+/*==========================Скрытые элементы=================================*/
 .pop-up,
 .big-map,
 .block-menu,
@@ -236,6 +230,7 @@ header {
 .service {
   display: none;
 }
+ /*==========================================================================*/
 
 .page-title-block h1 {
   font-size: 30px;
@@ -321,7 +316,7 @@ header {
 }
 
 /*========================Стлили наведения и клика главноя страница============*/
-.logo-header:hover {
+.logo-header a:hover {
   background-color: #ca2c37;
 }
 
@@ -352,7 +347,7 @@ header {
   text-decoration: underline;
 }
 
-/*========================Стлили наведения и клика каталога============*/
+/*========================Стлили наведения и клика каталога=================*/
 
 .button-user a:hover {
   color: #ee3643;
@@ -360,4 +355,91 @@ header {
 
 .paggination-list li:hover {
   border: 1px solid #bdc6ca;
+}
+ /*=================================Сеточные стили==========================*/
+
+ html,
+ body {
+   width: 1200px;
+
+ }
+
+/* .main-header {
+   min-height: 42px;
+   margin-bottom: 46px;
+ }
+
+ .header-flexbox {
+   width: 100%;
+   margin: 0 120px;
+   background-color: #293449;
+ }
+
+ .header-up {
+   width: 940px;
+   margin: 0 auto;
+   padding: 0 10px;
+   display: flex;
+
+ }
+
+.logo-header {
+  width: 220px;
+  height: 47px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.search {
+  margin: 0px;
+  padding: 0px;
+}
+
+.user-navigation {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bookmarks,
+.basket,
+.order {
+  width: 150px;
+  height: 42px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+*/
+
+.header-info {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.header-headline {
+  width: 196px;
+  height: 60px;
+
+}
+
+.number {
+  width: 270px;
+  height: 45px;
+
+}
+
+.main-navigation {
+  width: 940px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.list-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 55px 24px 52px;
+
 }
