@@ -194,7 +194,7 @@ a {
 }
 
 .breadcrumbs a {
-  font-family: "PTSans" "Arial", sans-serif;
+  font-family: "PTSans", "Arial", sans-serif;
   font-size: 13px;
   text-align: left;
   color: #000000;
@@ -376,9 +376,9 @@ a {
 }
  /*=================================Сеточные стили==========================*/
 
- html,
+
  body {
-   width: 1200px;
+   min-width: 960px;
 
  }
 
