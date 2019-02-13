@@ -12,12 +12,26 @@ body {
   text-align: left;
 }
 
+html {box-sizing: border-box;}
+,::before, *::after {box-sizing: inherit;}
+
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list-navigation,
@@ -376,57 +390,62 @@ a {
 }
  /*=================================Сеточные стили==========================*/
 
+/*В шапке не могу выровнять блоки чтоб они шли друг за другом и тянулись
+по ширине, когда задаешь ширину явно, начинают переносится
+У поиска почему всегда белый фон и нет заливки? Через какое своейство задать?
+Такая я же ерунда с заливкой по высоте, у всех блоков как и в основной
+навигации*/
 
  body {
    min-width: 960px;
-
+   margin: 0;
+   padding: 0;
  }
 
-/* .main-header {
-   min-height: 42px;
-   margin-bottom: 46px;
+ .container {
+   width: 960px;
+   margin: auto;
  }
 
- .header-flexbox {
-   width: 100%;
-   margin: 0 120px;
-   background-color: #293449;
- }
+.header-up {
+  width: auto;
+  min-height: 42px;
+  display: block;
+  background-color: #293449;
+}
 
- .header-up {
-   width: 940px;
-   margin: 0 auto;
-   padding: 0 10px;
-   display: flex;
-
- }
+.header-flexbox {
+  width: 940px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
 
 .logo-header {
   width: 220px;
   height: 47px;
-  margin: 0px;
-  padding: 0px;
-}
-
-.search {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left:
 }
 
 .user-navigation {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  width: 720px;
+  margin: auto;
+  justify-content: space-between;
 }
 
-.bookmarks,
-.basket,
-.order {
-  width: 150px;
-  height: 42px;
-  padding: 0 10px;
-  margin: 0 auto;
+.search {
+  display: flex;
+  justify-content: flex-start;
 }
-*/
+
+
+/*Шапка с инфой, телефон, адрес и кнопками входа и регистрации*/
 
 .header-info {
   width: 940px;
@@ -439,14 +458,20 @@ a {
 .header-headline {
   width: 196px;
   height: 60px;
-
 }
 
 .number {
   width: 270px;
   height: 45px;
-
 }
+
+
+/*Меню навигации
+Вроде получилось, как ты скинул настроил отступы, только нижний немного
+по другому, единственно ссылка контакты при наведении справа заливка не до края
+как и у ссылки главная, большой отступ слева остается.
+Может я не правильно их выровнял?
+*/
 
 .main-navigation {
   width: 940px;
@@ -458,6 +483,44 @@ a {
 .list-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 22px 55px 24px 52px;
+}
+
+.list-navigation li {
+  display: flex;
+}
+
+.list-navigation a {
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+
+
+/*Меню о компании и контакты
+Разбил на 2 блока, как их поставить рядом, вроде объеденены в один блок и
+у каждого свой контейнер.*/
+
+
+
+.info-company {
+  display: flex;
+  max-width: 519px;
+  min-height: 293px;
+  flex-direction: column;
+}
+
+  .button-company {
+    display: flex;
+    width: 220px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.contacts-down {
+  display: flex;
+  flex-direction: column;
 
 }
