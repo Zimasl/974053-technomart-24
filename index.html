@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -21,8 +23,8 @@
             </form>
           </div>
           <div class="button-user-header">
-          <a class="bookmarks" href="bookmarks.html">Закладки</a>
-          <a class="basket" href="basekt.html">Корзина:</a>
+          <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+          <a class="basket" href="basekt.html">Корзина: 0</a>
           <a class="order" href="order.html">Оформить заказ</a>
         </div>
         </div>
@@ -39,11 +41,13 @@
           <p class="number"> +7(812)555-05-55</p>
           <p class="adress-header"> г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
         </div>
+        <div class="button-user">
         <div class="user-login">
         <a class="button-inter" href="enter.html">Войти</a>
         </div>
         <div class="user-reg">
         <a class="button-reg" href="registration.html">Регистрация</a>
+        </div>
         </div>
         </div>
         <nav class="main-navigation">
@@ -154,8 +158,10 @@
           <span>Кредит</span>
         </div>
       </section>
+      <div class="info-techno container">
       <section class="info-company">
         <h2>Компания "Техномарт"</h2>
+        <div class="text-info-company">
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор
           товаров для ремонта и
           строительства не оставит равнодушными любителей сэкономить
@@ -163,6 +169,7 @@
         </p>
         <p> Мы поможем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:</p>
+        </div>
         <ul class="list-transport">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
@@ -171,35 +178,39 @@
         <div class="button-company">
         <a class="button-company" href="company.html">Подробнее о компании</a>
         </div>
-      </div>
       </section>
       <section class="contacts-down">
+        <div class="contacts-title">
         <h2>Контакты</h2>
         <p>
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
+        </div>
         <div class="map">
             <a class="map" href="#">
               <img src="img/map.jpg" width="300" height="158" alt="карта">
             </a>
-      </div>
-      <div class="form-write">
+        </div>
+        <div class="form-write">
           <a class="forma-write" href="forma-write.html">Заблудились? Напишите нам!</a>
-      </div>
+        </div>
       </section>
-      </main>
-      <footer class="main-footer container">
+    </div>
+    </main>
+      <footer class="main-footer">
         <div class="footer-up">
-          <div class="footer-up-left">
-            <div class="logo-footer">
-              <a><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
-            </div>
+          <div class="footer-up-flex">
+            <div class="footer-up-left">
+              <div class="logo-footer">
+                <a><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
+              </div>
             <div class="adress-footer">
               <p>г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
               <p> +7(812)555-05-55</p>
             </div>
           </div>
+          <div class="menu-footer">
           <ul class="list-navigation-footer">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
@@ -214,11 +225,14 @@
               <li><a href="sell-out.html">Спецпредложения</a></li>
             </ul>
           </div>
-        <div class="fotter-down">
-          <p>
-            @2010-2019 Компания "Техномарт"
-            Все права защищены
-          </p>
+        </div>
+        </div>
+        <div class="footer-down">
+          <div class="footer-down-flex">
+            <div class="rights"><p>
+              @2010-2019 Компания "Техномарт"
+              Все права защищены</p>
+            </div>
           <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -237,6 +251,7 @@
             </p>
           </div>
           </div>
+        </div>
       </footer>
       <section class="pop-up">
       <div class="form-answer">

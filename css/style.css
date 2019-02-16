@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
   /*font-weight: 700;*/
@@ -62,15 +62,10 @@ input[type="radio"].visually-hidden {
 .main-header {
   background-color: #f4f7f9;
 }
-.logo-header {
+.logo-header,
+.logo-footer {
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-}
-
-.header-up-cap {
-  font-size: 17px;
-  line-height: 18px;
-  background-color: #32425c;
 }
 
 .order {
@@ -396,15 +391,14 @@ input[type="radio"].visually-hidden {
 Такая я же ерунда с заливкой по высоте, у всех блоков как и в основной
 навигации*/
 
- body {
-   min-width: 960px;
-   margin: 0;
-   padding: 0;
- }
+.main-header {
+min-height: 320px;
+}
 
  .container {
-   width: 960px;
+   width: 940px;
    margin: auto;
+   display: flex;
  }
 
 .header-up {
@@ -417,16 +411,14 @@ input[type="radio"].visually-hidden {
 .header-flexbox {
   width: 940px;
   display: flex;
-  justify-content: space-around;
   margin: auto;
 }
 
 .logo-header {
   width: 220px;
-  height: 47px;
+  max-height: 47px;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   margin: 0;
   padding-left:
@@ -439,30 +431,113 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.search {
+.button-user-header {
   display: flex;
-  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  font-size: 17px;
+  line-height: 18px;
+
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 49px;
+}
+
+.bookmarks {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.basket {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.order {
+  width: 150px;
+  max-height: 42px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-left: 10px;
+}
 
 /*Шапка с инфой, телефон, адрес и кнопками входа и регистрации*/
 
 .header-info {
   width: 940px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 44px;
 }
 
 .header-headline {
   width: 196px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  line-height: 23px;
+  margin-top: 54px;
+  margin-left: 52px;
+}
+
+.contacts-up {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
 }
 
 .number {
-  width: 270px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 46px;
+  margin-bottom: 10px;
+}
+
+.adress-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.button-user {
+  display: flex;
+  margin-top: 46px;
+  font-size: 21px;
+  line-height: 21px;
+
+
+}
+.user-login {
+  width: 121px;
   height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.user-reg {
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin-left: 10px;
 }
 
 
@@ -476,39 +551,68 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   width: 940px;
   height: 60px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+  margin: auto;
+  display: block;
+  }
 
 .list-navigation {
+  min-height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0px;
 }
-
-.list-navigation li {
-  display: flex;
-}
-
-.list-navigation a {
-  padding-top: 22px;
-  padding-bottom: 14px;
-  padding-left: 31px;
-  padding-right: 31px;
-}
-
 
 
 /*Меню о компании и контакты
 Разбил на 2 блока, как их поставить рядом, вроде объеденены в один блок и
 у каждого свой контейнер.*/
 
-
+.info-techno {
+  display: flex;
+  justify-content: space-between;
+}
 
 .info-company {
   display: flex;
   max-width: 519px;
-  min-height: 293px;
   flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 86px;
+  margin-right: 121px;
+}
+
+.info-company h2 {
+  display: flex;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 36px;
+  }
+
+.text-info-company {
+  display: flex;
+  flex-direction: column;
+
+  }
+
+.text-info-company p {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.list-transport {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  }
+
+.list-transport li {
+  display: flex;
+  padding-bottom: 23px;
+  margin: 0;
 }
 
   .button-company {
@@ -517,10 +621,160 @@ input[type="radio"].visually-hidden {
     height: 38px;
     align-items: center;
     justify-content: center;
-  }
+}
 
 .contacts-down {
   display: flex;
   flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 86px;
+}
 
+.contacts-title {
+  display: flex;
+  flex-direction: column;
+  width: 179px;
+}
+
+.contacts-title h2 {
+  display: flex;
+  margin: 0;
+  margin-bottom: 36px;
+  }
+
+.contacts-title p {
+  display: flex;
+  margin: 0;
+  margin-bottom: 36px;
+  }
+
+.map {
+  display: flex;
+}
+
+.form-write {
+  display: flex;
+  width: 300px;
+  height: 38px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*===============================Футтер=====================================*/
+
+.footer-up {
+
+  width: auto;
+  display: block;
+}
+
+.footer-up-flex,
+.footer-down-flex {
+  width: 940px;
+  display: flex;
+  margin: auto;
+}
+
+.footer-up-left {
+  min-width: 322px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  margin-bottom: 53px;
+}
+
+.logo-footer {
+  width: 220px;
+  min-height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.adress-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-footer p {
+  margin: 0;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-navigation-footer {
+  min-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+
+.list-offers {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+
+.footer-down {
+  width: auto;
+  display: block;
+}
+
+.rights {
+  max-width: 227px;
+  display: flex;
+  margin-top: 39px;
+  margin-bottom: 35px;
+}
+
+.rights p{
+  margin: 0;
+}
+
+.footer-social {
+  min-width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: 0;
+  margin-left: 162px;
+}
+
+.footer-social ul {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.developed {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-left: 122px;
+}
+
+.mail-developed {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.footer-developed {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
