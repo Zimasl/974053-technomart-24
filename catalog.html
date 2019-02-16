@@ -4,43 +4,53 @@
  <meta charset="utf-8">
  <title>Техномарт</title>
  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
  <link href="css/normalize.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="inner-page">
- <header class="main-header">
-   <div class="logo-header">
-       <a href="index.html"><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
-   </div>
-   <div class="header-up-cap">
-     <div class="search">
-       <form action="https://echo.htmlacademy.ru" method="get" >
-           <input id="search" type="search" name="search"  placeholder="Поиск:">
-       </form>
+<header class="main-header">
+ <div class="header-up">
+   <div class="header-flexbox">
+     <div class="logo-header">
+         <a><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
      </div>
      <div class="user-navigation">
-       <a class="bookmarks" href="bookmarks.html">Закладки</a>
-       <a class="basket" href="basekt.html">Корзина:</a>
+       <div class="search">
+         <form action="https://echo.htmlacademy.ru" method="get" >
+             <input id="search" type="search" name="search"  placeholder="Поиск:">
+         </form>
+       </div>
+       <div class="button-user-header">
+       <a class="bookmarks" href="bookmarks.html">Закладки: 0</a>
+       <a class="basket" href="basekt.html">Корзина: 0</a>
        <a class="order" href="order.html">Оформить заказ</a>
      </div>
+     </div>
    </div>
+ </div>
    <div class="header-down">
-   <p class="header-headline">
-     Интернет магазин
-     строительных материалов
-     и инструментов для ремонта
-   </p>
-   <div class="contacts">
+     <div class="header-info">
+       <p class="header-headline">
+         Интернет магазин
+         строительных материалов
+         и инструментов для ремонта
+       </p>
+   <div class="contacts-up">
      <p class="number"> +7(812)555-05-55</p>
      <p class="adress-header"> г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
    </div>
-     <div class="user-login">
-       <p>Равшан Джамшутович</p>
-     </div>
+     <div class="menu-user">
+       <div class="user-login">
+         <p>Равшан Джамшутович</p>
+       </div>
      <div class="button-user">
      <a class="button-order" href="personal-order.html">Мои заказы</a>
      <a class="button-personal" href="personal-list.html">Личный кабинет</a>
      </div>
+     </div>
+   </div>
       <nav class="main-navigation">
         <ul class="list-navigation">
           <li><a href="main.html">Главная</a></li>
@@ -55,7 +65,7 @@
    </div>
  </header>
  <main class="drill">
-  <div>
+  <div class="breadcrumbs-nav">
    <ul class="breadcrumbs">
      <li><a href="main.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -66,6 +76,7 @@
    <div class="page-title-block">
    <h1 class="page-title">Перфораторы</h1>
  </div>
+   <div class="main-item">
    <section class="filters">
      <h2 class="visually-hidden">Фильтр товаров</h2>
      <form class="filter" method="get"
@@ -125,8 +136,8 @@
      </div>
    </form>
  </section>
-   <section class="catalog-drill">
-     <h2 class="visually-hidden">Список перфораторов</h2>
+   <section class="catalog-items">
+    <h2 class="visually-hidden">Список перфораторов</h2>
      <ul class="catalog-drill-list">
        <li class="catalog-item">
          <h3 class="drill-title">Перфоратор Bosch BFG 3000</h3>
@@ -226,24 +237,27 @@
         <li><a class="button" href="#">Следующая</a></li>
       </ul>
    </section>
+   </div>
    <div class="product-basekt">
      <span>Товар добавлен в корзину!</span>
      <a class="checkout" href="https://echo.htmlacademy.ru">Оформить заказ</a>
     <a class="continue" href="https://echo.htmlacademy.ru">Продолжить покупки</a>
     <button type="button" name="button-close">Закрыть</button>
-   </div>
+  </div>
   </main>
   <footer class="main-footer">
     <div class="footer-up">
-      <div class="footer-up-left">
-        <div class="logo-footer">
-          <a><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
-        </div>
+      <div class="footer-up-flex">
+        <div class="footer-up-left">
+          <div class="logo-footer">
+            <a><img src="img/logo-tm.svg" width="111" height="18" alt="logo"></a>
+          </div>
         <div class="adress-footer">
           <p>г.Санкт-Петербург ул. Б. Конюшенная д19/8</p>
           <p> +7(812)555-05-55</p>
         </div>
       </div>
+      <div class="menu-footer">
       <ul class="list-navigation-footer">
         <li><a href="company.html">Компания</a></li>
         <li><a href="news.html">Новости</a></li>
@@ -258,11 +272,14 @@
           <li><a href="sell-out.html">Спецпредложения</a></li>
         </ul>
       </div>
+    </div>
+    </div>
     <div class="footer-down">
-      <p>
-        @2010-2019 Компания "Техномарт"
-        Все права защищены
-      </p>
+      <div class="footer-down-flex">
+        <div class="rights"><p>
+          @2010-2019 Компания "Техномарт"
+          Все права защищены</p>
+        </div>
       <div class="footer-social">
       <ul>
         <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -270,6 +287,7 @@
         <li><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </div>
+        <div class="developed">
         <p class="mail-developed">
           Обратная свзяь:
         <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -279,6 +297,8 @@
         <a href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </div>
+      </div>
+    </div>
   </footer>
   </body>
 </html>

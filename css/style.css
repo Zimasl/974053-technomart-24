@@ -421,8 +421,7 @@ min-height: 320px;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-left:
-}
+  }
 
 .user-navigation {
   display: flex;
@@ -725,7 +724,6 @@ min-height: 320px;
   margin: 0;
 }
 
-
 .footer-down {
   width: auto;
   display: block;
@@ -777,4 +775,129 @@ min-height: 320px;
   display: flex;
   flex-direction: column;
   margin: 0;
+}
+
+
+/*==========================Внутреняя страница==========================*/
+
+.menu-user {
+  display: flex;
+  margin-top: 46px;
+  flex-direction: column;
+}
+
+.user-login {
+  width: 299px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.button-user {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.breadcrumbs-nav {
+  width: 940px;
+  margin: auto;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 0;
+}
+
+.breadcrumbs {
+  width: 380px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
+}
+
+.page-title-block {
+  width: 940px;
+  margin: auto;
+  display: flex;
+}
+
+.page-title-block h1 {
+  margin-left: 30px;
+}
+
+.main-item {
+  margin: auto;
+  width: 940px;
+  display: flex;
+}
+
+.filters {
+  width: 220px;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.list-firm  ul {
+  padding-left: 0;
+}
+
+.list-power ul {
+  padding-left: 0;
+  margin-bottom: 83px;
+}
+
+/*============================Каталог=====================================*/
+
+.catalog-drill-list {
+  max-width: 700px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-items {
+  font-size: 0;
+}
+
+.catalog-item {
+  font-size: 16px;
+}
+
+/*=============================================================================*/
+.paggination-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.paggination-list li {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.paggination-list li:nth-child(4) {
+  width: 140px;
+  height: 38px;
 }
