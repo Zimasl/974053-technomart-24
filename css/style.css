@@ -1,11 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Cuprum", "Open Sans", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  /*font-weight: 700;*/
   color: #ffffff;
   /*text-transform: uppercase;*/
   background-color: #ffffff;
@@ -76,6 +74,15 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
+  width: 196px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  line-height: 23px;
+  margin-top: 54px;
+  margin-bottom: 0;
+  margin-left: 53px;
+
 }
 
 .button-inter {
@@ -105,28 +112,71 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
 }
 
 .list-navigation {
   font-size: 17px;
   text-align: center;
   color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
+
+.list-navigation li {
+  display: flex;
+}
+
+.list-navigation a {
+  padding-top: 22px;
+  padding-bottom: 14px;
+}
+
 /*Подробнее о компании*/
 .info-company {
   color: #000000;
   background-color: #ffffff
+  display: flex;
+  max-width: 519px;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 86px;
+  margin-right: 121px;
 }
 
 .info-company h2{
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: normal;
+  display: flex;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 36px;
 }
 
-.info-company p{
+.info-company p {
   font-size: 13px;
   line-height: 24px;
+}
+
+.text-info-company {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-info-company p {
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .list-transport {
@@ -257,20 +307,35 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height:30px;
   color: #32425c;
-
 }
 
-.user-login p {
+.user-login p,
+.user-login-inner p {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
 
 .button-user a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+}
+
+.button-user-inner {
+  width: 210px;
   font-size: 16px;
   line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 17px;
+}
+
+.button-user-inner a {
+  display: flex;
   color: #32425c;
-  list-style: none;
+
 }
 
 /* ==========================Оформление каталога==========================*/
@@ -285,12 +350,13 @@ input[type="radio"].visually-hidden {
 }
 
 .list-firm  {
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 20px;
   color: #000000;
 }
 
 .list-firm li {
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -445,7 +511,7 @@ min-height: 320px;
   align-content: center;
   align-items: center;
   margin-left: 49px;
-}
+  }
 
 .bookmarks {
   width: 150px;
@@ -453,11 +519,47 @@ min-height: 320px;
   justify-content: center;
 }
 
+.button-user-header .bookmarks {
+  position: relative;
+}
+
+.bookmarks::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 14px;
+  height: 16px;
+  background-image: url("img/bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
 .basket {
   width: 150px;
   display: flex;
   justify-content: center;
   margin-left: 10px;
+}
+
+.button-user-header .basket {
+  position: relative;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 15px;
+  height: 15px;
+  background-image: url("img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .order {
@@ -475,20 +577,9 @@ min-height: 320px;
 
 .header-info {
   width: 940px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.header-headline {
-  width: 196px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  padding: 0px;
-  line-height: 23px;
-  margin-top: 54px;
-  margin-left: 52px;
 }
 
 .contacts-up {
@@ -506,10 +597,22 @@ min-height: 320px;
   margin-bottom: 10px;
 }
 
-.adress-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
+.contacts-up .number {
+  position: relative;
+}
+
+.number::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  background-image: url("img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #000000;
+  opacity: 0.3;
 }
 
 .button-user {
@@ -517,7 +620,6 @@ min-height: 320px;
   margin-top: 46px;
   font-size: 21px;
   line-height: 21px;
-
 
 }
 .user-login {
@@ -528,6 +630,26 @@ min-height: 320px;
   align-items: center;
   background-color: #ffffff;
 }
+
+.user-login .button-inter {
+  position: relative;
+}
+
+.button-inter::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -28px;
+  width: 20px;
+  height: 17px;
+  background-image: url("img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+
 
 .user-reg {
   width: 150px;
@@ -540,66 +662,23 @@ min-height: 320px;
 }
 
 
-/*Меню навигации
-Вроде получилось, как ты скинул настроил отступы, только нижний немного
-по другому, единственно ссылка контакты при наведении справа заливка не до края
-как и у ссылки главная, большой отступ слева остается.
-Может я не правильно их выровнял?
-*/
+/*Меню навигации*/
 
 .main-navigation {
   width: 940px;
   height: 60px;
-  margin: auto;
+  margin: 0 auto;
   display: block;
   }
 
-.list-navigation {
-  min-height: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 0px;
-}
 
 
-/*Меню о компании и контакты
-Разбил на 2 блока, как их поставить рядом, вроде объеденены в один блок и
-у каждого свой контейнер.*/
+
+/*==================Меню о компании и контакты===================================*/
 
 .info-techno {
   display: flex;
   justify-content: space-between;
-}
-
-.info-company {
-  display: flex;
-  max-width: 519px;
-  flex-direction: column;
-  align-content: space-between;
-  margin: 0;
-  margin-top: 82px;
-  margin-bottom: 86px;
-  margin-right: 121px;
-}
-
-.info-company h2 {
-  display: flex;
-  font-size: 30px;
-  line-height: 30px;
-  margin: 0;
-  margin-bottom: 36px;
-  }
-
-.text-info-company {
-  display: flex;
-  flex-direction: column;
-
-  }
-
-.text-info-company p {
-  margin: 0;
-  padding-bottom: 25px;
 }
 
 .list-transport {
@@ -641,6 +720,7 @@ min-height: 320px;
   display: flex;
   margin: 0;
   margin-bottom: 36px;
+  font-weight: normal;
   }
 
 .contacts-title p {
@@ -786,16 +866,19 @@ min-height: 320px;
   flex-direction: column;
 }
 
-.user-login {
+.user-login-inner {
   width: 299px;
   display: flex;
   background-color: #ffffff;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
 }
 
-.button-user {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+.user-login-inner p {
+  margin-top: 14px;
+  margin-bottom: 11px;
+  margin-left: 47px;
 }
 
 .breadcrumbs-nav {
@@ -849,37 +932,137 @@ min-height: 320px;
 
 /*============================Каталог=====================================*/
 
-.catalog-drill-list {
+.catalog-items {
   max-width: 700px;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
   padding-left: 0;
 }
 
 .catalog-item {
+  font-family: "PTSans", sans-serif;
   display: inline-block;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
   line-height: 20px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
   border: 1px solid #ccc;
+  color: #000000;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  position: absolute;
+  background-image: url("img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-item .actions {
+  position: absolute;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
+}
+
+.catalog-item .image {
+  width: 218px;
+  height: 168px;
+}
+
+.catalog-item .image img {
+  max-width: 100%;
+}
+
+.catalog-item .title {
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.catalog-item .discount {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.catalog-item .price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.catalog-item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
 }
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
-}
-
-.catalog-items {
-  font-size: 0;
-}
-
-.catalog-item {
-  font-size: 16px;
 }
 
 /*=============================================================================*/
@@ -897,7 +1080,7 @@ min-height: 320px;
   align-items: center;
 }
 
-.paggination-list li:nth-child(4) {
+.paggination-list li:last-of-type {
   width: 140px;
   height: 38px;
 }
