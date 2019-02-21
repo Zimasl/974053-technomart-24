@@ -11,7 +11,7 @@ body {
 }
 
 html {box-sizing: border-box;}
-,::before, *::after {box-sizing: inherit;}
+*,*::before, *::after {box-sizing: inherit;}
 
 a {
   text-decoration: none;
@@ -204,7 +204,7 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   display: flex;
   flex-direction: column;
-  padding-left: 36px;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -212,7 +212,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   padding-bottom: 20px;
   margin: 0;
+
 }
+
+.list-transport li::before {
+  content: "";
+  display: block;
+  background-color: #ee3643;
+  width:25px;
+  height:2px;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
 
 .list-transport li:last-of-type {
   padding-bottom: 35px;
@@ -326,7 +338,6 @@ input[type="radio"].visually-hidden {
 .page-title-block {
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
   background-color: #f2f6f8;
 }
 
@@ -336,8 +347,48 @@ input[type="radio"].visually-hidden {
 
 .list-firm span,
 .list-power span {
-  font-weight: bold;
+  font-family: "PT Sans" sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
+
+
+.list-firm li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 22px;
+}
+
+.list-power li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.list-firm  ul {
+  padding-left: 0;
+}
+
+.list-power ul {
+  padding-left: 0;
+  margin-bottom: 83px;
+}
+
+.custom-checkbox + label::before {
+content:"";
+position:absolute;
+width:20px;
+height:20px;
+background-image: url(../image());
+left:0;
+}
+
+
 
 .main-footer {
   background-color: #293449;
@@ -370,6 +421,11 @@ input[type="radio"].visually-hidden {
 .page-title-block h1 {
   font-size: 30px;
   line-height:30px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: normal;
+  margin: 0;
   color: #32425c;
 }
 
@@ -403,28 +459,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* ==========================Оформление каталога==========================*/
-
-.list-firm li {
-  font-family: "PT Sans", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  color: #000000;
-  padding-bottom: 22px;
-}
-
-.list-power {
-  font-size: 17px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.list-power li {
-  font-family: "PT Sans", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  color: #000000;
-}
-
 .catalog-item {
   font-weight: bold;
   border: 1px solid #e5e5e5;
@@ -481,6 +515,7 @@ input[type="radio"].visually-hidden {
 }
 
 .developed a:active {
+  text-decoration: none;
   color: #ee3643;
 }
 
@@ -600,7 +635,7 @@ min-height: 320px;
   justify-content: center;
   padding-top: 13px;
   padding-bottom: 11px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .bookmarks::before {
@@ -622,6 +657,7 @@ min-height: 320px;
   justify-content: center;
   padding-top: 13px;
   padding-bottom: 11px;
+  padding-left: 18px;
 }
 
 .basket::before {
@@ -694,6 +730,7 @@ min-height: 320px;
 
 .number {
   width: 270px;
+  min-height: 45px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -702,8 +739,10 @@ min-height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 46px;
+  margin-top: 47px;
   margin-bottom: 5px;
+  padding-left: 20px;
+
 }
 
 .adress-header {
@@ -719,7 +758,7 @@ min-height: 320px;
   content: "";
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 14px;
   width: 19px;
   height: 19px;
   background-image: url("../img/phone.svg");
@@ -835,15 +874,17 @@ min-height: 320px;
   justify-content: space-between;
   margin-top: 37px;
   margin-bottom: 33px;
-  padding-left: 20px;
+  margin-left: 20px;
+  padding-left: 0;
+
 }
 
 .list-offers {
-  width: 525px;
+  min-width: 525px;
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-left: 45px;
+
 }
 
 .footer-down {
@@ -1015,10 +1056,9 @@ min-height: 320px;
 
 .breadcrumbs-nav {
   width: 940px;
+  height: 60px;
   margin: auto;
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 25px;
   padding-left: 0;
 }
 
@@ -1026,19 +1066,27 @@ min-height: 320px;
   width: 360px;
   display: flex;
   justify-content: space-around;
+  align-content: center;
+  align-items: center;
   padding-left: 0;
   margin: 0;
-  font-family: "PTSans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: left;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.breadcrumbs li {
+  padding-right: 15px;
+  padding-top: 5px;
 }
 
 .breadcrumbs a {
-  font-family: "PTSans", "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: left;
@@ -1054,8 +1102,8 @@ min-height: 320px;
 .main::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -15px;
+  top: -6px;
+  left: -10px;
   width: 14px;
   height: 12px;
   background-image: url("../img/home.svg");
@@ -1065,14 +1113,14 @@ min-height: 320px;
 }
 
 .catalog {
-  padding-left: 12px;
+  padding-left: 20px;
 }
 
 .catalog::before {
   content: "";
   position: absolute;
   top: 2px;
-  left: -11px;
+  left: -7px;
   width: 8px;
   height: 12px;
   background-image: url("../img/right-small.svg");
@@ -1133,16 +1181,6 @@ min-height: 320px;
   margin-right: 20px;
   margin-top: 20px;
 }
-
-.list-firm  ul {
-  padding-left: 0;
-}
-
-.list-power ul {
-  padding-left: 0;
-  margin-bottom: 83px;
-}
-
 /*============================Каталог=====================================*/
 
 .catalog-items {
@@ -1154,35 +1192,16 @@ min-height: 320px;
 }
 
 .catalog-item {
-  font-family: "PTSans", sans-serif;
-  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
   width: 218px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  padding-right: 20px;
   line-height: 20px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   border: 1px solid #ccc;
   color: #000000;
-}
-
-.catalog-item .flag {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 60px;
-  height: 60px;
-  text-indent: -1000px;
-  overflow: hidden;
-  z-index: 20;
-}
-
-.catalog-item .flag-new {
-  position: absolute;
-  background-image: url("img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .catalog-item .actions {
