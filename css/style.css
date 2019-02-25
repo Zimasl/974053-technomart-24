@@ -1327,7 +1327,7 @@ min-height: 320px;
 .catalog-item .actions {
   position: absolute;
   width: 216px;
-  height: 88px;
+  height: 158px;
   padding-left: 39px;
   padding-top: 43px;
   padding-bottom: 42px;
@@ -1377,7 +1377,8 @@ min-height: 320px;
   justify-content: center;
   width: 135px;
   height: 38px;
-  margin: 0 auto;
+  margin: 9px auto;
+  margin-left: 39px;
   padding: 7px 0;
   background-color: #ffffff;
   border: 3px solid #63a63e;
