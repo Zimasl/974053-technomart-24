@@ -41,8 +41,9 @@
     </div>
     <div class="menu-user">
       <div class="user-login-inner">
-        <p><a href="#">Равшан Джамшутович</a></p>
-        <a class="visually-hidden logout" href="catalog.html">Выход из профиля</a>
+        <p><a href="#" class="name-user">Равшан Джамшутович</a>
+        <a class="logout" href="catalog.html"><span class="visually-hidden">Выход из профиля</span></a>
+        </p>
       </div>
       <div class="button-user-inner">
        <a class="button-order" href="personal-order.html">Мои заказы</a>
@@ -78,11 +79,15 @@
     <div class="filter-sorting">
       <div class="filter-title">ФИЛЬТР:</div>
       <div class="sorting-title">
-        <div class="sorting">СОРТИРОВКА:</div>
-        <div class="sorting-price"><a href="#">ПО ЦЕНЕ</a></div>
-        <div class="sorting-type"><a href="#">ПО ТИПУ</a></div>
-        <div class="sorting-function"><a href="#">ПО ФУНКЦИОНАЛУ</a></div>
-      </div>
+        <span>СОРТИРОВКА:</span>
+      <ul class="sorting">
+        <li class="sorting-price"><a href="#">ПО ЦЕНЕ</a></li>
+        <li class="sorting-type"><a href="#">ПО ТИПУ</a></li>
+        <li class="sorting-function"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+        <li><a href="#" class="sorting-up"></a></li>
+        <li><a href="#" class="sorting-down"></a></li>
+      </ul>
+    </div>
     </div>
   <div class="main-item">
     <section class="filters">
@@ -90,13 +95,13 @@
         <span>ЦЕНА:</span>
         <div class="range-controls"></div>
         <div class="scale"></div>
-        <div class="toggle toggle-min"></div>
-        <div class="toggle toggle-max"></div>
+        <button class="toggle toggle-min" aria-label="Переключатель левый"></button>
+        <button class="toggle toggle-max" aria-label="Переключатель правый"></button>
       </div>
       <div class="price-control">
-        <input class="price-min" type="name" name="price-min" value="0">
+        <input class="price-min" type="name" name="price-min" placeholder="0">
         <span>—</span>
-        <input class="price-max" type="name" name="price-max" value="30000">
+        <input class="price-max" type="name" name="price-max" placeholder="30000">
       </div>
     <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get"
@@ -246,11 +251,10 @@
       <div class="title-perforator">
       <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
       <p>Перфоратор — универсальный строительный инструмент.
-        Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
         Существуют электромеханические и пневматические перфораторы.
         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-        В ассортиментном ряду есть выбор «трехрежимников»:
-        в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
       </p>
   </div>
   </div>
