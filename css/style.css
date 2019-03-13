@@ -239,8 +239,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 300px;
-  height: 123px;
+  width: 300px;
+  min-height: 123px;
   color: #ffffff;
   padding-left: 23px;
   padding-top: 1px;
@@ -1211,7 +1211,6 @@ background-image: url(../img/radio-off.svg);
 background-repeat: no-repeat;
 left:0;
 top: 0;
-top: -2px;
 }
 
 .custom-radio:checked + label::after {
@@ -1223,7 +1222,6 @@ top: -2px;
   background-repeat: no-repeat;
   left:0;
   top: 0;
-  top: -2px;
 }
 
 .custom-radio:hover + label::before,
@@ -1527,6 +1525,23 @@ min-height: 320px;
   background-position: 17px 12px;
   border: 0;
   color: #ffffff;
+}
+
+.search-color:-ms-input-placeholder {
+   color:#ffffff;
+}
+
+.search-color::-webkit-input-placeholder {
+   color:#ffffff;
+}
+
+.search-color:-moz-placeholder {
+   color:#ffffff;
+}
+
+/* firefox 19+ */
+.search-color::-moz-placeholder {
+   color:#ffffff;
 }
 
 .search-color:hover {
@@ -2470,7 +2485,7 @@ margin-top: 20px;
   content: "";
   width: 152px;
   height: 2px;
-  background-color: #ee3643;
+  background-color: #00ca74;
   bottom: 39px;
   left: 20px;
 }
@@ -2520,6 +2535,7 @@ margin-bottom: 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2531,13 +2547,32 @@ margin-bottom: 41px;
   background-color: #f7f3ec;
   border: 0;
   border-radius: 3px;
-  padding-left: 46px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price-min:-ms-input-placeholder {
+   color:#000000;
+}
+
+.price-min::-webkit-input-placeholder {
+   color:#000000;
+}
+
+.price-min:-moz-placeholder {
+   color:#000000;
+}
+
+/* firefox 19+ */
+.price-min::-moz-placeholder {
+   color:#000000;
 }
 
 .price-max {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2549,8 +2584,26 @@ margin-bottom: 41px;
   background-color: #f7f3ec;
   border: 0;
   border-radius: 3px;
-  padding-left: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 11px;
+}
+
+.price-max:-ms-input-placeholder {
+   color:#000000;
+}
+
+.price-max::-webkit-input-placeholder {
+   color:#000000;
+}
+
+.price-max:-moz-placeholder {
+   color:#000000;
+}
+
+/* firefox 19+ */
+.price-max::-moz-placeholder {
+   color:#000000;
 }
 
 
@@ -2861,10 +2914,6 @@ margin-bottom: 41px;
 
 
 /*=======================Модальные окна ======================================*/
-.modal-show {
-  display: block;
-}
-
 .modal {
   position: fixed;
   color: #000000;
@@ -2877,7 +2926,7 @@ margin-bottom: 41px;
 
 .modal-answer {
   width: 620px;
-  top: 150px;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -2903,6 +2952,11 @@ margin-bottom: 41px;
   border: 0;
   top: 16px;
   right: 7px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .form-answer {
@@ -3007,7 +3061,7 @@ margin-bottom: 41px;
 .modal-map {
   width: 940px;
   height: 446px;
-  top: 100px;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -3104,5 +3158,49 @@ margin-bottom: 41px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 3px;
+}
 
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
