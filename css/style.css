@@ -2807,10 +2807,12 @@ margin-bottom: 41px;
   margin-top: 7px;
   margin-bottom: 17px;
   padding: 10px 30px;
-  padding-left: 38px;
+  padding-left: 36px;
   color: white;
   background: #ee3643;
   border-radius: 3px;
+  margin-left: 41px;
+  margin-right: 44px;
 }
 
 .catalog-item .price:after {
@@ -3079,8 +3081,9 @@ margin-bottom: 41px;
   border: none;
 }
 
-.modal-open {
-  display: block;
+.map-open {
+  display: none;
+  z-index: 33;
 }
 
 .modal-basket {
