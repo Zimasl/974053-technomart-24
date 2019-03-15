@@ -2098,9 +2098,12 @@ min-height: 320px;
   margin-top: 14px;
   margin-bottom: 11px;
   margin-left: 47px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
 }
 
-.icon-user::before {
+.icon-user {
   content: "";
   position: absolute;
   top: 13px;
@@ -2112,7 +2115,7 @@ min-height: 320px;
   background-position: 0 0;
 }
 
-.icon-user::before:hover {
+.icon-user:hover {
   content: "";
   position: absolute;
   top: 13px;
@@ -2124,7 +2127,7 @@ min-height: 320px;
   background-position: 0 0;
 }
 
-.logout::after {
+.logout {
   content: "";
   position: absolute;
   top: 14px;
@@ -2135,7 +2138,7 @@ min-height: 320px;
   background-repeat: no-repeat;
 }
 
-.logout::after:hover {
+.logout:hover {
   content: "";
   position: absolute;
   top: 14px;
