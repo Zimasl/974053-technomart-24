@@ -6,7 +6,7 @@
  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&subset=cyrillic" rel="stylesheet">
  <link href="css/normalize.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
- <link href="css/style.min.css" rel="stylesheet">
+
 </head>
 <body class="inner-page">
 <header class="main-header">
@@ -42,7 +42,9 @@
     </div>
     <div class="menu-user">
       <div class="user-login-inner">
-        <p><a href="#" class="name-user">Равшан Джамшутович</a>
+        <p>
+        <a href="#" class="icon-user"><span class="visually-hidden">Профиль пользователя</span></a>
+        <a href="#" class="name-user">Равшан Джамшутович</a>
         <a class="logout" href="catalog.html"><span class="visually-hidden">Выход из профиля</span></a>
         </p>
       </div>
@@ -321,19 +323,19 @@
     </div>
     </div>
   </div>
-  <div class="modal modal-basket">
-      <div class="this-ok">
-     <span>Товар добавлен в корзину!</span>
-   </div>
-    <div class="button-modal-basket">
-      <a class="button checkout" href="https://echo.htmlacademy.ru">ОФОРМИТЬ ЗАКАЗ</a>
-      <a class="continue" href="https://echo.htmlacademy.ru">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+    </footer>
+    <div class="modal modal-basket">
+        <div class="this-ok">
+       <span>Товар добавлен в корзину!</span>
+     </div>
+      <div class="button-modal-basket">
+        <a class="button checkout" href="https://echo.htmlacademy.ru">ОФОРМИТЬ ЗАКАЗ</a>
+        <a class="continue" href="https://echo.htmlacademy.ru">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+      </div>
+      <button class="modal-close" type="button" name="button-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </div>
-    <button class="modal-close" type="button" name="button-close">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </div>
-  </footer>
   <script src="js/modal.js"></script>
 
 </body>
