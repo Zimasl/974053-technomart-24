@@ -1,4 +1,4 @@
-var link = document.querySelector(".forma-write");
+var link = document.querySelector(".blank-write");
 
 if (link) {
 
