@@ -56,6 +56,10 @@ if (link) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
+
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
     }
   });
 }
@@ -66,6 +70,7 @@ if (link) {
 var mapLink = document.querySelector(".map-open");
 
 if (mapLink) {
+
   var mapPopup = document.querySelector(".modal-map");
   var mapClose = mapPopup.querySelector(".modal-close");
 
@@ -77,15 +82,6 @@ if (mapLink) {
   mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
-      }
-    }
   });
 }
 
