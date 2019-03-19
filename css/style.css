@@ -66,6 +66,7 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   color: #ffffff;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -286,6 +287,18 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
+.button-materials,
+.button-tool,
+.button-equipment,
+.button-sales,
+.button-delivery-free {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 135px;
+  min-height: 38px;
+  text-transform: uppercase;
+}
+
 .button-cards:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -300,7 +313,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/materials.svg");
   width: 44px;
   height: 65px;
-  top: 27px;
+  top: 31px;
   right: 43px;
 }
 
@@ -310,7 +323,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/drill.svg");
   width: 75px;
   height: 61px;
-  top: 30px;
+  top: 33px;
   right: 28px;
 }
 
@@ -508,6 +521,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   color: #32425c;
   background-color: #f9f5f0;
+  text-transform: uppercase;
 }
 
 .popular-products-title h2,
@@ -646,6 +660,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 398px;
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .service-title h2 {
@@ -745,11 +760,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   width: 275px;
   height: 147px;
   margin-left: 80px;
   margin-top: 24px;
+
 }
 
 .info-delivery::before {
@@ -770,7 +785,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   width: 379px;
   height: 172px;
   margin-left: 80px;
@@ -794,7 +808,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
   width: 279px;
   height: 100px;
   margin-left: 80px;
@@ -818,6 +831,7 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
   color: #32425c;
   margin-bottom: 13px;
+  text-transform: uppercase;
 }
 
 .info-delivery p,
@@ -1559,10 +1573,11 @@ input[type="radio"].visually-hidden {
 }
 
 .bookmarks {
-  min-width: 150px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1575,7 +1590,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 13px;
-  left: 15px;
+  left: 17px;
   width: 14px;
   height: 16px;
   background-image: url("../img/bookmark.svg");
@@ -1585,10 +1600,11 @@ input[type="radio"].visually-hidden {
 }
 
 .basket {
-  min-width: 150px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1632,11 +1648,12 @@ input[type="radio"].visually-hidden {
 }
 
 .order {
-  min-width: 150px;
-  max-height: 42px;
+  width: 150px;
+  min-height: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1875,6 +1892,7 @@ input[type="radio"].visually-hidden {
 
 .adress-footer p {
   margin: 0;
+  padding-top: 1px;
   margin-left: 2px;
 }
 
@@ -1915,6 +1933,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
+  padding-left: 43px;
 }
 
 .footer-down {
@@ -1930,7 +1949,7 @@ input[type="radio"].visually-hidden {
   margin-top: 36px;
   margin-bottom: 35px;
   margin: 0;
-  margin-top: 22px;
+  margin-top: 36px;
 }
 
 .footer-social {
@@ -2035,7 +2054,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 85px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .mail-developed {
@@ -2097,7 +2116,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-login-inner p {
-  margin-top: 14px;
+  margin-top: 12px;
   margin-bottom: 11px;
   margin-left: 47px;
   font-size: 21px;
@@ -3188,6 +3207,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   color: #000000;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .modal-show {
