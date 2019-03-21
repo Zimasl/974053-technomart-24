@@ -431,29 +431,37 @@ input[type="checkbox"].visually-hidden,
   display: flex;
   position: relative;
   bottom: 37px;
-  left: 254px;
+  left: 255px;
 }
 
 .slider-button {
-  display: block;
-  width: 9px;
+  display: flex;
+  position: relative;
+  width: 10px;
   height: 10px;
+  padding: 0;
   border-radius: 50%;
   border: none;
   background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .dots-2 {
-  padding-left: 8px;
+  padding-left: 10px;
 }
 
-.slider-button-active {
+.slider-button-active:before {
+  content: "";
   display: block;
   position: absolute;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   border: none;
   background-color: #ee3643;
+  margin: 0;
+  padding: 0;
 }
 
 .button-back {
