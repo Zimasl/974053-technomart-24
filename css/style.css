@@ -26,7 +26,7 @@ a {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+  [type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -49,7 +49,8 @@ input[type="radio"].visually-hidden {
 .list-power li,
 .breadcrumbs li,
 .list-transport,
-.sorting-title li {
+.sorting-title li,
+.slide-control li {
   list-style: none;
 }
 
@@ -426,6 +427,26 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
 }
 
+.slide-control {
+  display: flex;
+  position: absolute;
+  top: 201px;
+  left: 255px;
+}
+
+.dots-2 {
+  padding-left: 7px;
+}
+
+.slide-control input {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background-color: #ffffff;
+}
+
+
+
 .button-back {
   position: absolute;
   width: 22px;
@@ -769,7 +790,6 @@ input[type="radio"].visually-hidden {
   width: 275px;
   margin-left: 80px;
   margin-top: 24px;
-
 }
 
 .info-delivery::before {
@@ -1308,6 +1328,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 
 .main-footer {
@@ -1339,6 +1360,7 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   margin: 0;
   color: #32425c;
+  text-transform: uppercase;
 }
 
 .user-login p,
@@ -2294,6 +2316,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
 }
 
 .page-title-block h1 {
@@ -2307,6 +2330,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: auto;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .filter-title {
@@ -2924,6 +2948,7 @@ input[type="radio"].visually-hidden {
   padding-top: 40px;
   margin-bottom: 13px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .title-perforator p {
