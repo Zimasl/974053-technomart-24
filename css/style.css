@@ -429,23 +429,32 @@ input[type="checkbox"].visually-hidden,
 
 .slide-control {
   display: flex;
-  position: absolute;
-  top: 201px;
-  left: 255px;
+  position: relative;
+  bottom: 37px;
+  left: 254px;
 }
 
-.dots-2 {
-  padding-left: 7px;
-}
-
-.slide-control input {
-  width: 12px;
-  height: 12px;
+.slider-button {
+  display: block;
+  width: 9px;
+  height: 10px;
+  border-radius: 50%;
   border: none;
   background-color: #ffffff;
 }
 
+.dots-2 {
+  padding-left: 8px;
+}
 
+.slider-button-active {
+  display: block;
+  position: absolute;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ee3643;
+}
 
 .button-back {
   position: absolute;
